@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -9,17 +10,13 @@ export class HomeComponent implements OnInit {
 
   h1Gray: boolean = false;
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
   }
 
   firstClick() {
-    if(this.h1Gray === false) {
-      this.h1Gray = true;
-    } else {
-      this.h1Gray = false;
-    }
+    this.data.sharedMethod();
   }
 
 }
