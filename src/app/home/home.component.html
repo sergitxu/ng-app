@@ -4,3 +4,9 @@
 }">Home</h1>
 
 <button (click)="firstClick()">Click me!</button>
+
+<ul *ngIf="cosmonauts">
+  <li *ngFor="let cosmonaut of cosmonauts.people">
+    {{cosmonaut.name}}
+  </li>
+</ul>
