@@ -1,3 +1,20 @@
-<app-navigation></app-navigation>
-
-<router-outlet></router-outlet>
+<zoom-page-template>
+    <ng-container zoomHeader>
+        <zoom-header raetId="zoomHeader">
+        <span class="platform-name" platformName>ngApp test</span>
+        <img src="assets/img/yourLogo.png" logo alt="" />
+        <span subBarText>Hi!</span>
+        </zoom-header>
+    </ng-container>
+  
+    <ng-container zoomMain>
+        <app-navigation></app-navigation>
+        <router-outlet></router-outlet>
+    </ng-container>
+  
+    <ng-container zoomFooter>
+        <zoom-footer raetId="zoomFooter">
+        Responsible disclosure policy
+        </zoom-footer>
+    </ng-container>
+  </zoom-page-template>
