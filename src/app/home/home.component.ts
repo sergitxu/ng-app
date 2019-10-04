@@ -8,16 +8,16 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
 
-  h1Gray: boolean = false;
+  h1Gray = false;
 
-  cosmonauts: Object;
+  cosmonauts: object;
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
     this.data.getData().subscribe(data => {
       this.cosmonauts = data;
-      console.log(data)
+      console.log(data);
     });
   }
 
