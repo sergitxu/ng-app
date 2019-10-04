@@ -1,14 +1,13 @@
 <zoom-page-template>
     <ng-container zoomHeader>
         <zoom-header raetId="zoomHeader">
-        <span class="platform-name" platformName>ngApp test</span>
+        <app-navigation platformName></app-navigation>
         <img src="assets/img/yourLogo.png" logo alt="" />
         <span subBarText>Hi!</span>
         </zoom-header>
     </ng-container>
   
     <ng-container zoomMain>
-        <app-navigation></app-navigation>
         <router-outlet></router-outlet>
     </ng-container>
   
