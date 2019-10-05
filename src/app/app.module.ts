@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { ZoomPageTemplateModule } from '@zoomui/page-template';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { ZoomPageTemplateModule } from '@zoomui/page-template';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    ZoomPageTemplateModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
