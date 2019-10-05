@@ -23,8 +23,11 @@
       </div>
     </label>
 
-    <input type="submit" value="Send message" class="cta">
-
+    <zoom-button 
+    type="{{submit}}"
+    (actionEvent)="onClickNoLoading()">
+    Send message
+    </zoom-button>
 </form>
 
 <div *ngIf="submitted" class="results">
